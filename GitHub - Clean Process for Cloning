@@ -1,0 +1,31 @@
+
+
+
+# Backup your local code (in case needed)
+cp -r /path/to/your/local/repo /path/to/backup
+
+# Clone the remote repository
+# Start fresh by cloning the remote repository into a new directory:
+# Reasoning: This fetches the exact current state of the remote repository. 
+# You’re starting with a clean slate, ensuring that the remote files (e.g., README.md, LICENSE) are present locally.
+git clone https://github.com/mridulja/demo-git-training.git
+cd demo-git-training
+
+# Copy local files into the cloned repository (if needed)
+# Reasoning: Staging prepares the files for the next commit. 
+#You’re making sure all your local changes (including README.md) are tracked by Git
+cp -r /path/to/your/local/files/* .
+
+# Stage and commit your changes
+# Reasoning: This records the changes you’ve made locally so they can be pushed to the remote repository.
+git add .
+git commit -m "Merged local changes with remote repository"
+
+# Pull changes from the remote and resolve conflicts if needed
+#Reasoning: This step ensures that any changes made on the remote repository (e.g., updates to README.md or other files) are not lost. 
+# The --allow-unrelated-histories flag is required because the local and remote repositories may have different commit histories.
+git pull origin main --allow-unrelated-histories
+
+# Push the final changes to the remote repository
+# Reasoning: This updates the remote repository to match your local repository, including all new and resolved changes.
+git push origin main
