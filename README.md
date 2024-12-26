@@ -1,7 +1,7 @@
 this is a readme file
 
 ##################################
-Git tutorial for High School Kids.
+# Git tutorial for High School Kids.
 ##################################
 
 
