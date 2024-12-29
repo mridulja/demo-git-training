@@ -1,8 +1,6 @@
 """Module for demonstrating basic Python functionality and Git tutorial examples."""
 
 from typing import Final
-
-
 # Constants at module level using snake_case
 USER_NAME: Final[str] = "Peter"
 USER_AGE: Final[int] = 20
