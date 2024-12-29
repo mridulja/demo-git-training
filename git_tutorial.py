@@ -1,15 +1,26 @@
+"""Module for demonstrating basic Python functionality and Git tutorial examples."""
+
 print("Hello, World!")
+print("hello")
 
-print ("hell")
 
-def summation(a, b):
+def summation(a: int, b: int) -> int:
+    """Calculate the sum of two numbers.
+
+    Args:
+        a: First number to add
+        b: Second number to add
+
+    Returns:
+        The sum of a and b
+    """
     return a + b
 
-result = summation(1, 2)
-print(result)
 
-name: str = "Peter"
-age: int = 20
+RESULT = summation(1, 2)
+print(RESULT)
 
-print(name, age)
+NAME: str = "Peter"
+AGE: int = 20
 
+print(NAME, AGE)
