@@ -5,6 +5,10 @@ from typing import Final
 USER_NAME: Final[str] = "Peter"
 USER_AGE: Final[int] = 20
 
+var: int = 10
+var = "Hello"
+
+
 def add_numbers(first_num: int, second_num: int) -> int:
     """Calculate the sum of two numbers.
 

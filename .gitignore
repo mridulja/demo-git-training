@@ -20,3 +20,21 @@ __pycache__
 
 *.pyd
 *.pyd*
+
+dist
+/dist
+./dist/
+
+build
+/build
+./build/
+
+*.egg-info
+*.egg-info*
+./*.egg-info/
+.mypy_cache
+.pytest_cache
+.ruff_cache
+.ruff_cache*
+.ruff_cache/
+.ruff_cache/*
